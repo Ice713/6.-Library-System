@@ -23,9 +23,7 @@ namespace _6.Library_System
 
             string bookTitle = myEbook.GetTitleInfo();
 
-            string fileSize = myEbook.GetFileSizeInfo();
-
-            MessageBox.Show($"{bookTitle}\n{fileSize}", "Ebook Info");
+            MessageBox.Show($"{bookTitle}", "Ebook Info");
         }
     }
 }
