@@ -16,5 +16,16 @@ namespace _6.Library_System
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Ebook myEbook = new Ebook("C# Programming", "5MB");
+
+            string bookTitle = myEbook.GetTitleInfo();
+
+            string fileSize = myEbook.GetFileSizeInfo();
+
+            MessageBox.Show($"{bookTitle}\n{fileSize}", "Ebook Info");
+        }
     }
 }
